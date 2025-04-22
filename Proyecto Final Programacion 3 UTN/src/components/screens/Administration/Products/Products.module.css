@@ -1,0 +1,8 @@
+.mainContent {
+    display: flex;
+    height: 70vh;
+}
+.contentHero{
+    padding: 15px;
+    width: 100%;
+}

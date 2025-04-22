@@ -1,0 +1,120 @@
+.mainContent {
+    display: flex;
+    
+}
+
+
+.MainDiv {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    min-height: 90vh;
+}
+
+.titleContainer {
+    display: flex;
+    flex-direction: row;
+    box-shadow: 2px 2px 5px hsl(0, 0%, 61%);
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    margin: 0 auto;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.containerList{
+    box-shadow: 2px 2px 5px #696969;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 76vh;
+    overflow-y: scroll;
+
+}
+
+.containerList{
+    padding: 10px;
+}
+ul{
+    list-style: none;
+}
+.containerItem {
+    width: 95%;
+    height: 60px;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 2px 2px 5px #696969;
+    padding: 10px;
+    border-radius: 12px;
+    background-color: aliceblue;
+    padding-left: 20px;
+    font-size: 1.1rem;
+  
+}
+.BodyDeploy {
+    margin-top: 20px;
+}
+.containerButtons{
+    width: 45%;
+    max-width: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Modal y boton */
+
+.AddAlergen {
+
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 6px;
+    border-color: #007bff;
+    font-size: 16px;
+    height: 38px;
+}
+
+
+
+.ModalAddAlergenTitle {
+    margin-top: 30px;
+    font-size: 30px;
+}
+
+
+
+.ModalAddAlergenButtons button{
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 6px;
+    border-color: #007bff;
+    font-size: 16px;
+    height: 38px;
+}
+
+.backgroundDisabled{
+    background-color:rgba(0, 0, 0, 0.5) !important ;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index:2 !important
+}
+.itemText{
+    width: 50%;
+    max-width: 300px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scrollbar-width: thin;
+    scrollbar-color: #ccc transparent;
+    text-align: left;
+    height: 100%;
+}
+
