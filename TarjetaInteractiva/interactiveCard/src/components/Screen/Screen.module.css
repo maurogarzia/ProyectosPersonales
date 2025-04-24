@@ -24,7 +24,7 @@
     border-radius: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: end;
     padding: 0.5rem;
     background-color: black ;
     color: white;

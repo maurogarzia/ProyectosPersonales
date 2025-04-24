@@ -2,7 +2,17 @@ import styles from './Card.module.css'
 import image6 from '../../../images/image6.png'
 
 export const Card = () => {
+    // SitioWeb
+    const web = 'https://www.youtube.com/watch?v=F-A_ujDnMo4'
 
+    // Datos email
+    const email = 'maurogarzia2@gmail.com'
+    const subject = 'Consulta de Servicio'
+    const body = 'Hola, estoy interesado en contratar servicios'
+    const encodedSubject = encodeURIComponent(subject)
+    const encodedBody = encodeURIComponent(body)
+
+    // Datos numero
     const phonNumbre = '5492616928706'
     const message = 'Hola, estoy interesado en contratar servicios'
     const encodeMessage = encodeURIComponent(message)
@@ -20,29 +30,36 @@ export const Card = () => {
                 <div className={styles.containerContact}>
 
                     <div className={styles.dates}>
-                        <div className={styles.a}>
+                        <div className={styles.divIcon}>
                             <span className="material-symbols-outlined">
                                 mail
                             </span>
                         </div>
-                        <a href='' className={styles.email}>maurogarzia2@gmail.com</a>
+                        <a href={`https://mail.google.com/mail/?view=cm&fs=1&to=${email}&su=${encodedSubject}&body=${encodedBody}`} 
+                        target="_blank" 
+                        rel="noopener noreferrer" 
+                        className={styles.email}>
+                            Email
+                        </a>
                     </div>
                     <div className={styles.dates}>
-                        <div className={styles.a}>
+                        <div className={styles.divIcon}>
                             <span className="material-symbols-outlined">
                                 language
                             </span>
                         </div>
                         
-                        <a href='' >www.SitioWeb.com</a>
+                        <a href={web} >SitioWeb</a>
                     </div>
                     <div className={styles.dates}>
-                        <div className={styles.a}>
+                        <div className={styles.divIcon}>
                             <span className="material-symbols-outlined">
                                 call
                             </span>
                         </div>
-                        <a href={`http://wa.me/${phonNumbre}?text=${encodeMessage}`} >2616928706</a>
+                        <a href={`http://wa.me/${phonNumbre}?text=${encodeMessage}`}>
+                            Contact
+                        </a>
                     </div>
                 </div>
             </div>
