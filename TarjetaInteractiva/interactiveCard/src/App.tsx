@@ -1,12 +1,13 @@
-import { Card } from "./components/Card/Card"
+import { Screen } from "./components/Screen/Screen"
+
 
 function App() {
   
 
   return (
-    <>
-      <Card/>
-    </>
+    <div>
+      <Screen/>
+    </div>
   )
 }
 
