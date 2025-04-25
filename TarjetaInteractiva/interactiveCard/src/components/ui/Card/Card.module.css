@@ -47,6 +47,7 @@
 .dates{
     display: flex;
     gap : 5px;
+    cursor: pointer;
 }
 .dates a{
     color: black;
@@ -64,4 +65,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.dates:hover{
+    transform: scale(1.03);
+    transition: 0.3s ease;
 }
